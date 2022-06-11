@@ -257,6 +257,17 @@ class Main extends hxd.App {
 	private function onground(c:Collider) {
 		// trace(c.GetCenter());
 		trace("on");
+		if (dinosaurRB.velocity.y <0){
+
+		}else{
+
+		}
+		if (dinosaurRB.velocity.x <0){
+
+		}else{
+
+		}
+
 		for (item in c.collidedWith){
 			if (item.collider == dinosaur){
 				trace(item.normal, item.err,dinosaurRB.velocity.x);
